@@ -6,11 +6,15 @@
 
 #Find the sum of the even digits in the variable "var_int".
 
-var_int = 2222
+var_int = 1234
 sum_even = 0
 a = abs(((var_int//1000)%2)-1)
 b = abs(((var_int%1000//100)%2)-1)
 c = abs(((var_int%100//10)%2)-1)
 d = abs(((var_int%10)%2)-1)
-sum_even = a+b+c+d
+a1 = var_int//1000
+b1 = var_int%1000//100
+c1 = var_int%100//10
+d1 = var_int%10
+sum_even = (a*a1)+(b*b1)+(c*c1)+(d*d1)
 print(sum_even)
